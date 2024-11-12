@@ -1,20 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ghost Tours</title>
+  <link rel="icon" type="image/x-icon" href="assets/imgs/cartoon-ghost.png">
   <!-- Note that the following 3 tasks each use the "link" element, but in a different way -->
     <!-- Link to existing css file found in assets folder -->
     <!-- Add a favicon with the image called "cartoon-ghost.png" in the images folder -->
    <!-- Find the font Vollkorn on Google Fonts and add that here -->
-  
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
   <main>
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="icon" type="image/x-icon" href="(assets/imgs/cartoon-ghost.png)">
     <h1>Ghost Tours</h1>
+
+    <img id="ghost" src="assets/imgs/cartoon-ghost.png" alt="cute ghost">
+
+      <section id="tours">
+        <article>
+          <img src="assets/imgs/haunted-house-1.png" alt="cottage">
+          <div class="overlay">
+            <h3>A Haunted Cottage</h3>
+            <p>Spooky aah</p>
+          </div>
+        </article>
+
+        <article>
+          <img src="assets/imgs/haunted-house-2.jpeg" alt="mansion">
+          <div class="overlay">
+            <h3>A Haunted Masion</h3>
+            <p>Even more spooky aah</p>
+          </div>
+        </article>
+
+        <article>
+          <img src="assets/imgs/haunted-house-3.jpeg" alt="Colonial">
+          <div class="overlay">
+            <h3>A Haunted Masion</h3>
+            <p>EThe most spooky aah</p>
+          </div>
+        </article>
+
+
+      </section>
+        
+
+      <h2> Ghost of the Month</h2>
+      <img id="boo" src="assets/imgs/boo.webp">
+    </section>
+
+    <section id="book">
+      <h2> Book your Tour</h2>
+      <form>
+          <label for="name">Name</label>
+          <br>
+          <input type="text" id="name">
+          <br>
+          <label for="email">Email</label>
+          <br> 
+          <input type="email" id="email">
+          <br>
+          <label for="tour-type">Select your tour type</label>
+          <br>
+          <select id="tour-type">
+            <option>Haunted Cottage</option>
+            <option>Haunted Mansion</option>
+            <option>Haunted Colonial</option>
+          </select>
+          <br>
+          <label for="message">Please tell us anything else we need to know</label>
+          <br>
+          <textarea id="message"></textarea>
+          <br>
+          <button>Book tour</button>
+
+
+
+      </form>
+    </section>
   </main>
+  <footer>
+
+  <img id="bottom-border" src="assets/imgs/ghost-border.png">
+
+  </footer>
 </body>
 </html>
